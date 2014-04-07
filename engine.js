@@ -9,10 +9,9 @@
    'use strict';
 
    function Engine(){
+      Subscribable.prepareInstance(this);
       this.buildPositions();
    }
-
-   Engine.prototype = Object.create(Subscribable.prototype);
 
    Engine.prototype.positions = {};
 
