@@ -12,7 +12,7 @@
       this.buildPositions();
    }
 
-   Engine.prototype = Object.create(Subscribable.prototype);
+   (Engine.prototype = Object.create(Subscribable.prototype)).constructor = Engine;
 
    Engine.prototype.positions = {};
 
